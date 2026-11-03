@@ -1,0 +1,98 @@
+.glass-effect {
+  background: #fff;
+  border: 1px solid #e2e8f0;
+  box-shadow:
+    0 1px 3px #0000001a,
+    0 1px 2px -1px #0000001a;
+}
+
+.card-gradient {
+  background: #fff;
+}
+
+#logo .rounded-2xl,
+header .rounded-2xl.shadow-blue-500\/20 {
+  background: linear-gradient(135deg, #2563eb, #4338ca) !important;
+  width: 3.5rem !important;
+  height: 3.5rem !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  border-radius: 1rem !important;
+  box-shadow: 0 10px 15px -3px rgba(37, 99, 235, 0.25) !important;
+  flex-shrink: 0 !important;
+}
+
+#logo .rounded-2xl i,
+header .rounded-2xl.shadow-blue-500\/20 i {
+  color: #ffffff !important;
+  display: block !important;
+}
+
+#header .rounded-2xl {
+  border-radius: 1rem !important;
+}
+
+#summary-cards > div,
+#dashboard-widgets > div,
+.rounded-2xl {
+  border-radius: 1rem !important;
+}
+
+.rounded-xl {
+  border-radius: 0.75rem !important;
+}
+
+.rounded-lg {
+  border-radius: 0.5rem !important;
+}
+
+[dir="rtl"] #notifications-card .border-l-4 {
+  border-left-width: 0 !important;
+  border-right-width: 4px !important;
+  border-top-right-radius: 0.5rem !important;
+  border-bottom-right-radius: 0.5rem !important;
+  border-top-left-radius: 0.5rem !important;
+  border-bottom-left-radius: 0.5rem !important;
+}
+
+[dir="rtl"] #notifications-card .border-blue-500 {
+  border-right-color: #3b82f6 !important;
+}
+
+[dir="rtl"] #notifications-card .border-green-500 {
+  border-right-color: #22c55e !important;
+}
+
+#header > div {
+  box-shadow:
+    0 4px 20px -2px rgba(0, 0, 0, 0.05),
+    0 2px 6px -1px rgba(0, 0, 0, 0.02) !important;
+}
+
+#summary-cards > div {
+  box-shadow:
+    0 4px 20px -2px rgba(0, 0, 0, 0.06),
+    0 2px 6px -1px rgba(0, 0, 0, 0.03) !important;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease !important;
+}
+
+#summary-cards > div:hover {
+  transform: translateY(-2px);
+  box-shadow:
+    0 10px 25px -3px rgba(0, 0, 0, 0.08),
+    0 4px 10px -2px rgba(0, 0, 0, 0.04) !important;
+}
+
+#dashboard-widgets > div {
+  box-shadow:
+    0 4px 20px -2px rgba(0, 0, 0, 0.06),
+    0 2px 6px -1px rgba(0, 0, 0, 0.03) !important;
+}
+
+#header button,
+#header .bg-white {
+  box-shadow: 0 2px 8px -1px rgba(0, 0, 0, 0.06) !important;
+}

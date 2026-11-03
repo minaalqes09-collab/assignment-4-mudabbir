@@ -1,0 +1,138 @@
+.card-flip {
+  perspective: 1200px;
+}
+
+.card-inner {
+  width: 100%;
+  transform-style: preserve-3d;
+  transition: transform 0.7s cubic-bezier(0.2, 0.9, 0.3, 1);
+  position: relative;
+}
+
+.card-flip:hover .card-inner,
+.card-flip .card-inner.flipped {
+  transform: rotateY(180deg);
+}
+
+.card-front,
+.card-back {
+  backface-visibility: hidden;
+  border-radius: 0.75rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.card-front {
+  transform: translateZ(0);
+}
+
+.card-front .primary-badge {
+  color: #fff;
+  -webkit-backdrop-filter: blur(4px);
+  backdrop-filter: blur(4px);
+  background: #ffffff24;
+  border-radius: 999px;
+  padding: 6px 10px;
+  font-size: 0.72rem;
+  font-weight: 700;
+  position: absolute;
+  top: 10px;
+  left: 12px;
+}
+
+.card-back {
+  color: #fff;
+  background: linear-gradient(120deg, #051026, #0b1220 45%, #0f1724);
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 1rem;
+  display: flex;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transform: rotateY(180deg);
+}
+
+.card-back .mag-stripe {
+  background: linear-gradient(90deg, #000, #111 40%, #2b2b2b);
+  border-radius: 3px;
+  height: 52px;
+  margin-top: 6px;
+  box-shadow: inset 0 6px 14px #ffffff05;
+}
+
+.card-back .microprint {
+  color: #ffffff7a;
+  letter-spacing: 0.6px;
+  margin-top: 8px;
+  font-size: 10px;
+}
+
+.card-back .signature {
+  color: #111827;
+  background: linear-gradient(90deg, #f8fafc, #eef2f6);
+  border-radius: 4px;
+  align-items: center;
+  height: 36px;
+  margin-top: 10px;
+  padding: 6px 8px;
+  font-weight: 700;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+}
+
+.card-back .signature .scribble {
+  background-image: linear-gradient(90deg, #0000000f, #0000002e, #0000000f);
+  border-radius: 2px;
+  width: 86%;
+  height: 12px;
+  transform: skew(-10deg);
+}
+
+.card-back .signature .last4 {
+  color: #000000d9;
+  margin-left: 8px;
+  font-family: monospace;
+  font-size: 0.9rem;
+}
+
+.card-back .holo {
+  background: radial-gradient(
+    circle at 30% 30%,
+    #e9f8ff,
+    #9fd3ff 20%,
+    #ffffff0f 40%,
+    #ffffff05 70%
+  );
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  box-shadow:
+    0 2px 8px #00000059,
+    inset 0 -4px 10px #ffffff0f;
+}
+
+.card-back .cvv-row {
+  justify-content: flex-end;
+  align-items: center;
+  gap: 12px;
+  margin-top: 12px;
+  display: flex;
+}
+
+.card-back .cvv-box {
+  color: #111827;
+  letter-spacing: 1px;
+  text-align: center;
+  background: #fff;
+  border-radius: 6px;
+  min-width: 48px;
+  padding: 8px 12px;
+  font-weight: 700;
+}

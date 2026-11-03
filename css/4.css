@@ -1,0 +1,165 @@
+.budget-category-item {
+  background: #f9fafb80;
+  border: 1px solid #e5e7ebcc;
+  border-radius: 0.75rem;
+  padding: 1rem;
+  transition: all 0.2s;
+}
+
+.budget-category-item:hover {
+  background: #f3f4f6cc;
+  border-color: #d1d5dbe6;
+  transform: translateY(-1px);
+  box-shadow:
+    0 4px 6px -1px #0000001a,
+    0 2px 4px -1px #0000000f;
+}
+
+.budget-category-item .w-full.bg-gray-200 {
+  background: #e5e7eb;
+}
+
+.budget-category-item .w-full.bg-gray-200 > div {
+  transition: width 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.bg-gradient-to-r.from-blue-50.to-indigo-50 {
+  background: linear-gradient(90deg, #eff6ff, #eef2ff);
+}
+
+@keyframes progressFill {
+  0% {
+    width: 0%;
+  }
+}
+
+.budget-category-item .bg-orange-500,
+.budget-category-item .bg-red-500,
+.budget-category-item .bg-purple-500,
+.budget-category-item .bg-pink-500,
+.budget-category-item .bg-green-500 {
+  animation: 1.2s ease-out progressFill;
+}
+
+.budget-category-item .bg-green-100 {
+  background-color: #dcfce7;
+}
+.budget-category-item .text-green-800 {
+  color: #166534;
+}
+.budget-category-item .bg-yellow-100 {
+  background-color: #fef3c7;
+}
+.budget-category-item .text-yellow-800 {
+  color: #92400e;
+}
+.budget-category-item .bg-red-100 {
+  background-color: #fee2e2;
+}
+.budget-category-item .text-red-800 {
+  color: #991b1b;
+}
+
+.css-chart {
+  justify-content: space-between;
+  align-items: flex-end;
+  height: 100%;
+  padding: 1rem 0;
+  display: flex;
+  position: relative;
+}
+
+.css-chart-grouped {
+  justify-content: space-between;
+  align-items: flex-end;
+  height: 100%;
+  padding: 1rem 0;
+  display: flex;
+  position: relative;
+}
+
+.css-chart-group {
+  flex-direction: column;
+  flex: 1;
+  align-items: center;
+  margin: 0 0.25rem;
+  display: flex;
+}
+
+.css-chart-bars {
+  align-items: flex-end;
+  gap: 2px;
+  height: 160px;
+  display: flex;
+}
+
+.css-chart-bar-income {
+  background: #10b981;
+  border-radius: 3px 3px 0 0;
+  width: 16px;
+  transition: all 0.3s;
+}
+
+.css-chart-bar-expense {
+  background: #ef4444;
+  border-radius: 3px 3px 0 0;
+  width: 16px;
+  transition: all 0.3s;
+}
+
+.css-chart-bar-income:hover,
+.css-chart-bar-expense:hover {
+  opacity: 0.8;
+}
+
+.css-chart-legend {
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  display: flex;
+}
+
+.css-chart-legend-item {
+  color: #64748b;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.75rem;
+  display: flex;
+}
+
+.css-chart-legend-color {
+  border-radius: 2px;
+  width: 12px;
+  height: 12px;
+}
+
+.legend-income {
+  background: #10b981;
+}
+.legend-expense {
+  background: #ef4444;
+}
+
+.css-chart-label {
+  color: #64748b;
+  text-align: center;
+  margin-top: 0.5rem;
+  font-size: 0.75rem;
+}
+
+#budget-overview-card .bg-gradient-to-r.from-blue-500.to-indigo-500 {
+  background: linear-gradient(90deg, #3b82f6, #6366f1) !important;
+  height: 0.5rem !important;
+  border-radius: 9999px !important;
+  display: block !important;
+  animation: progressFillTotal 1.4s cubic-bezier(0.4, 0, 0.2, 1) forwards !important;
+}
+
+@keyframes progressFillTotal {
+  from {
+    width: 0% !important;
+  }
+  to {
+    width: 84% !important; 
+  }
+}
